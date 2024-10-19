@@ -1,15 +1,82 @@
 <!DOCTYPE html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head> 
 <html>
 <body style="background-color: #F2F0EF;">
 <h1> 
   <div class="header">
-  	<a href="#default" class="logo">ANDREW CHEN</a>
+  	<a href="#default" class="logo">ANDREW CHEN PHOTOGRAPHY</a>
   	  <div class="header-right">
     	<a href="#email">chenandrew55@gmail.com</a>
   	  </div>
   </div> 
 </h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>HELP</p>
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/1.jpg" width="100%">
+  	</a>
+  </div>
+  <div class="grid-item grid-item--width2">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/5.jpg" width="100%">
+  	</a>
+  </div>
+  <div class="grid-item">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/2.jpg" width="100%">
+  	</a>
+  </div>
+  <div class="grid-item .grid-item--width2">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/3.jpg" width="100%">
+  	</a>
+  </div>
+  <div class="grid-item">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/4.jpg" width="100%">
+  	</a>
+  </div>
+  <div class="grid-item">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/6.jpg" width="100%">
+  	</a>
+  </div>
+  <div class="grid-item">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/7.jpg" width="100%">
+  	</a>
+  </div>
+  <div class="grid-item">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/8.jpg" width="100%">
+  	</a>
+  </div>
+  <div class="grid-item">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/9.jpg" width="100%">
+  	</a>
+  </div>
+  <div class="grid-item grid-item--width2">
+  	<a class="lightbox" href="" width="100%">
+  	  <img src="./assets/images/10.jpg" width="100%">
+  	</a>
+  </div>
+</div>
 </body>
 </html>
+
+<script>
+  $('.grid').masonry({
+    // options
+    percentPosition: true,
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    gutter: 10,
+    horizontalOrder: true
+  });
+</script>
