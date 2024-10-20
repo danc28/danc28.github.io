@@ -9,7 +9,7 @@ body { font-family: Arial; }
 
 .header a {
   float: left;
-  color: black;
+  color: #030303;
   text-align: center;
   padding: 1px;
   text-decoration: none;
@@ -24,7 +24,7 @@ body { font-family: Arial; }
 }
 
 .header a:hover {
-  color: #333333;
+  color: #444444;
 }
 
 .header-right {
@@ -49,15 +49,15 @@ body { font-family: Arial; }
 
 .grid-sizer,
 .grid-item {
-  width: calc(25% - 7.5px);
+  width: calc(25% - 12px);
   float: left;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
   min-width: 150px;
   height:auto;
 }
 
-.grid-item--width2 { width: calc(50% - 5px); }
-.grid-item--width3 { width: calc(75% - 2.5px); }
+.grid-item--width2 { width: calc(50% - 6px); }
+.grid-item--width3 { width: calc(75% - 4px); }
 
 .grid-item--height2 { height: 600px; }
 .grid-item--height3 { height: 900px; }
@@ -80,10 +80,10 @@ body { font-family: Arial; }
   cursor: pointer;
 }
 .backToTopBtn:not(:hover) {
-  background: #1f1f1f;
+  background: #030303;
 }
 .backToTopBtn:hover {
-  background: #030303;
+  background: #222222;
 }
 .backToTopBtn.active {
   visibility: visible;

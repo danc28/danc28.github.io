@@ -1,7 +1,7 @@
 
 function scrollTop() {
   // 500 -> This is the value in px of the distance to be scrolled for the 'scroll-to-top' button to show-up
-  if ($(window).scrollTop() > 800) {
+  if ($(window).scrollTop() > 850) {
     $(".backToTopBtn").addClass("active");
   } else {
     $(".backToTopBtn").removeClass("active");
