@@ -29,6 +29,7 @@ body { font-family: Arial; }
 
 .header-right {
   float: right;
+  text-align: center;
 }
 
 /* ---- grid ---- */
@@ -48,14 +49,49 @@ body { font-family: Arial; }
 
 .grid-sizer,
 .grid-item {
-  width: 24%;
+  width: calc(25% - 7.5px);
   float: left;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
+  min-width: 150px;
+  height:auto;
 }
 
-.grid-item--width2 { width: 48.5%; }
-.grid-item--width3 { width: 73%; }
+.grid-item--width2 { width: calc(50% - 5px); }
+.grid-item--width3 { width: calc(75% - 2.5px); }
 
 .grid-item--height2 { height: 600px; }
 .grid-item--height3 { height: 900px; }
 .grid-item--height4 { height: 1200px; }
+
+/* ---- button ---- */
+
+.backToTopBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border: none;
+  color: #cccccc;
+  border-radius: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.backToTopBtn:not(:hover) {
+  background: #1f1f1f;
+}
+.backToTopBtn:hover {
+  background: #030303;
+}
+.backToTopBtn.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.backToTopBtn:not(.active) {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
