@@ -49,15 +49,15 @@ body { font-family: Arial; }
 
 .grid-sizer,
 .grid-item {
-  width: calc(25% - 12px);
+  width: calc(25% - 9px);
   float: left;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   min-width: 150px;
   height:auto;
 }
 
 .grid-item--width2 { width: calc(50% - 6px); }
-.grid-item--width3 { width: calc(75% - 4px); }
+.grid-item--width3 { width: calc(75% - 3px); }
 
 .grid-item--height2 { height: 600px; }
 .grid-item--height3 { height: 900px; }
