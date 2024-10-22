@@ -219,10 +219,11 @@
     columnWidth: '.grid-sizer',
     gutter: 12,
     horizontalOrder: true
-  });
-  // $grid.imagesLoaded( function() {
-  //   $grid.masonry();
-  // });
+    });
+     
+    $grid.imagesLoaded( function() {
+      $grid.masonry();
+    });
   }
 
   window.addEventListener('load',setup());
