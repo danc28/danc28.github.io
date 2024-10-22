@@ -27,7 +27,7 @@
         <img src="./assets/images/img1.jpg" width="100%">
       </a>
     </div>
-    <div class="grid-item grid-item--width2">
+    <div class="grid-item">
       <a class="lightbox" href="" width="100%">
         <img src="./assets/images/img2.jpg" width="100%">
       </a>
@@ -37,7 +37,7 @@
         <img src="./assets/images/img3.jpg" width="100%">
       </a>
     </div>
-    <div class="grid-item .grid-item--width2">
+    <div class="grid-item">
       <a class="lightbox" href="" width="100%">
         <img src="./assets/images/img4.jpg"  width="100%">
       </a>
@@ -67,7 +67,7 @@
         <img src="./assets/images/img9.jpg" width="100%">
       </a>
     </div>
-    <div class="grid-item grid-item--width2">
+    <div class="grid-item">
       <a class="lightbox" href="" width="100%">
         <img src="./assets/images/img10.jpg" width="100%">
       </a>
@@ -92,7 +92,7 @@
         <img src="./assets/images/img14.jpg" width="100%">
       </a>
     </div>
-    <div class="grid-item grid-item--width2">
+    <div class="grid-item">
       <a class="lightbox" href="" width="100%">
         <img src="./assets/images/img15.jpg" width="100%">
       </a>
@@ -117,7 +117,7 @@
         <img src="./assets/images/img19.jpg" width="100%">
       </a>
     </div>
-    <div class="grid-item grid-item--width2">
+    <div class="grid-item">
       <a class="lightbox" href="" width="100%">
         <img src="./assets/images/img20.jpg" width="100%">
       </a>
@@ -172,23 +172,15 @@
         <img src="./assets/images/img30.jpg" width="100%">
       </a>
     </div>
-    <div class="grid-item grid-item--width2">
+    <div class="grid-item">
       <a class="lightbox" href="" width="100%">
         <img src="./assets/images/img31.jpg" width="100%">
       </a>
     </div>
     <div class="grid-item">
-    </div>
-    <div class="grid-item">
       <a class="lightbox" href="" width="100%">
         <img src="./assets/images/img32.jpg" width="100%">
       </a>
-    </div>
-    <div class="grid-item">
-    </div>
-    <div class="grid-item">
-    </div>
-    <div class="grid-item">
     </div>
     <div class="grid-item">
       <a class="lightbox" href="" width="100%">
@@ -218,7 +210,7 @@
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
     gutter: 12,
-    horizontalOrder: true
+    // horizontalOrder: true
     });
 
     $grid.imagesLoaded( function() {
@@ -226,7 +218,7 @@
     });
   }
 
-  window.load(setup());
+  window.addEventListener('load',setup());
  
   // $grid.runOnImageLoad(function () { $grid.recalculate(true); }, true);   
 </script>
