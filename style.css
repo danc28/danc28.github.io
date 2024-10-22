@@ -67,7 +67,8 @@ body { font-family: Arial; }
   float: left;
   margin-bottom: 8px;
   min-width: 150px;
-  height:auto;
+  height: auto;
+  display: none;
 }
 
 .grid-item--width2 { width: calc(50% - 6px); }
