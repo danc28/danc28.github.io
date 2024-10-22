@@ -214,8 +214,8 @@
     gutter: 12,
     horizontalOrder: true
   });
-  // $grid.imagesLoaded().progress( function() {
-  //   $grid.masonry();
-  // });
-  $grid.runOnImageLoad(function () { $grid.recalculate(true); }, true);   
+  $grid.imagesLoaded( function() {
+    $grid.masonry();
+  });
+  // $grid.runOnImageLoad(function () { $grid.recalculate(true); }, true);   
 </script>
