@@ -216,5 +216,6 @@
   });
   $grid.imagesLoaded().progress( function() {
     $grid.masonry();
-  });  
+  });
+  macy_instance.runOnImageLoad(function () { macy_instance.recalculate(true); }, true);   
 </script>
