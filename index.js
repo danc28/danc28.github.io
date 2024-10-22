@@ -1,7 +1,7 @@
 
 function scrollTop() {
   // 500 -> This is the value in px of the distance to be scrolled for the 'scroll-to-top' button to show-up
-  if ($(window).scrollTop() > 850) {
+  if ($(window).scrollTop() > 850 + window.screen.height) {
     $(".backToTopBtn").addClass("active");
   } else {
     $(".backToTopBtn").removeClass("active");
@@ -19,6 +19,14 @@ $(function () {
     return false;
   });
 });
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100 && $(this).scrollTop() < 800) {  
+        $('header').addClass("sticky");
+    } else{
+        $('header').removeClass("sticky");
+    }
+})
 
 /*
 $('.grid').masonry({

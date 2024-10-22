@@ -205,17 +205,27 @@
 </html>
 
 <script>
-  $('.grid').masonry({
+
+  var $items = $('.grid-item');
+  $items.hide();
+
+  function setup(){
+    $items.fadeIn();
+
+     $('.grid').masonry({
     // options
     percentPosition: true,
-    waitforImages: true,
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
     gutter: 12,
     horizontalOrder: true
   });
-  $grid.imagesLoaded( function() {
-    $grid.masonry();
-  });
+  // $grid.imagesLoaded( function() {
+  //   $grid.masonry();
+  // });
+  }
+
+  window.addEventListener('load',setup());
+ 
   // $grid.runOnImageLoad(function () { $grid.recalculate(true); }, true);   
 </script>
