@@ -199,9 +199,6 @@
 
 <script>
 
-  var $items = $('.grid-item');
-  $items.hide();
-
   function setup(){
     $grid.imagesLoaded()( function() {  
       $('.grid').masonry({
@@ -212,7 +209,6 @@
         gutter: 12,
         // horizontalOrder: true
       });
-      $items.show();
       $grid.masonry();
     });
   }
