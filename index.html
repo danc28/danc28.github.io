@@ -202,7 +202,6 @@
   $items.hide();
 
   function setup(){
-    $items.fadeIn();
 
      $('.grid').masonry({
     // options
@@ -213,8 +212,9 @@
     // horizontalOrder: true
     });
 
-    $grid.imagesLoaded( function() {
-      $grid.masonry();
+    $grid.imagesLoaded()( function() {
+      $items.fadeIn();
+      $grid.masonry('layout');
     });
   }
 
