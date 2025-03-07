@@ -4,6 +4,7 @@
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image">
   <script src="index.js"></script>
 </head> 
 <html>
@@ -202,19 +203,17 @@
   $items.hide();
 
   function setup(){
-
-     $('.grid').masonry({
-    // options
-    percentPosition: true,
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    gutter: 12,
-    // horizontalOrder: true
-    });
-
-    $grid.imagesLoaded()( function() {
-      $items.fadeIn();
-      $grid.masonry('layout');
+    $grid.imagesLoaded()( function() {  
+      $('.grid').masonry({
+        // options
+        percentPosition: true,
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        gutter: 12,
+        // horizontalOrder: true
+      });
+      $items.show();
+      $grid.masonry();
     });
   }
 
