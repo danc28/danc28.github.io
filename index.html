@@ -23,13 +23,13 @@
   <div class="grid" width="full-bleed" padding="0px">
     <div class="grid-sizer"></div>
     <div class="grid-item">
-      <a class="lightbox" href="" width="100%">
-        <img src="./assets/images/img1.jpg" width="100%">
+      <a class="lightbox" href="">
+        <img src="./assets/images/img1.jpg">
       </a>
     </div>
-    <div class="grid-item">
-      <a class="lightbox" href="" width="100%">
-        <img src="./assets/images/img2.jpg" width="100%">
+    <div class="grid-item grid-item--width2">
+      <a class="lightbox" href="" >
+        <img src="./assets/images/img2.jpg" >
       </a>
     </div>
     <div class="grid-item">
@@ -213,9 +213,7 @@
     });
 
     $grid.imagesLoaded()( function() {
-      $grid.masonry('layout');
       $items.fadeIn();
-      
       $grid.masonry('layout');
     });
   }
